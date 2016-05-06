@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedbackViewController">
+            <connections>
+                <outlet property="feedBackTextView" destination="KzZ-US-cS9" id="9s5-RM-ZoD"/>
+                <outlet property="textLabel" destination="8Bd-O4-pQX" id="klm-AX-uxV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KzZ-US-cS9">
+                    <rect key="frame" x="13" y="14" width="574" height="217"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="217" id="6uB-ck-3tm"/>
+                    </constraints>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="还剩500个字" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bd-O4-pQX">
+                    <rect key="frame" x="487" y="241" width="100" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="WeL-ky-KHn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="KzZ-US-cS9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="14" id="Ike-F2-9MQ"/>
+                <constraint firstAttribute="trailing" secondItem="KzZ-US-cS9" secondAttribute="trailing" constant="13" id="MUp-ck-fNn"/>
+                <constraint firstItem="8Bd-O4-pQX" firstAttribute="trailing" secondItem="KzZ-US-cS9" secondAttribute="trailing" id="dcs-mb-eGK"/>
+                <constraint firstItem="KzZ-US-cS9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="l7k-MJ-xLH"/>
+                <constraint firstItem="8Bd-O4-pQX" firstAttribute="top" secondItem="KzZ-US-cS9" secondAttribute="bottom" constant="10" id="tPM-Ng-7WT"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
